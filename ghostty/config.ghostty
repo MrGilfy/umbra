@@ -1,0 +1,39 @@
+# Behaviour
+confirm-close-surface = false
+quit-after-last-window-closed = false
+clipboard-paste-protection = false
+mouse-hide-while-typing = true
+
+# Font
+font-family = JetBrainsMono Nerd Font
+font-size = 11
+
+# Window (KWin draws the titlebar, so it matches Klassy)
+window-decoration = server
+window-padding-x = 12
+window-padding-y = 12
+background-opacity = 1
+
+# Colors: pure black, greyscale palette, muted red for errors
+background = #000000
+foreground = #e1e1e1
+cursor-color = #ffffff
+selection-background = #ffffff
+selection-foreground = #000000
+
+palette = 0=#1a1a1a
+palette = 1=#b45a5a
+palette = 2=#bdbdbd
+palette = 3=#cfcfcf
+palette = 4=#9a9a9a
+palette = 5=#a8a8a8
+palette = 6=#8f8f8f
+palette = 7=#c8c8c8
+palette = 8=#555555
+palette = 9=#d27878
+palette = 10=#d6d6d6
+palette = 11=#e6e6e6
+palette = 12=#b8b8b8
+palette = 13=#c4c4c4
+palette = 14=#adadad
+palette = 15=#ffffff

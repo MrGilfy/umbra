@@ -1,0 +1,8 @@
+[Global]
+LookAndFeelSet=org.kde.breezedark.desktop
+
+[WindowOutlineStyle]
+WindowOutlineAccentColorOpacityActive=100
+WindowOutlineContrastFromColorSchemeInactive=false
+WindowOutlineContrastOpacityInactive=90
+WindowOutlineStyleActive=WindowOutlineAccentColor
