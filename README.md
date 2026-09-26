@@ -32,7 +32,7 @@ cd umbra
 ./install.sh
 ```
 
-The script installs all packages, copies the configs and applies colors, application style, window decoration and icons. Existing config files it touches are backed up to `~/.local/state/umbra-backup/`. A few things can't be scripted reliably, those are listed at the end of the script and explained below.
+The script installs all packages, copies the configs and applies colors, application style, window decoration and icons. Existing config files it touches are backed up to `~/.local/state/umbra-backup/`. After the script finishes, only three things are left to do by hand: the fonts (step 6), the panels (steps 7 and 8) and the wallpaper. Everything else is already configured.
 
 **Tip:** back up your current setup before you start:
 
@@ -150,24 +150,6 @@ If you use Konsole instead, copy `konsole/Umbra.colorscheme` to `~/.local/share/
 Any moody greyscale photo works: misty mountains, dark forests, statues. Desaturate a photo you like if you can't find one.
 
 Wallpaper used in the screenshot: [wallhaven m96qky](https://wallhaven.cc/w/m96qky).
-
-## Troubleshooting
-
-**Dolphin stays grey/blue after changing the color scheme.** Dolphin has its own color scheme override:
-
-```sh
-sed -i '/^ColorScheme=/d' ~/.config/dolphinrc
-```
-
-**Text fields or slider handles are invisible.** You're using a color scheme where `View` and `Button` are pure black. Use the included `Umbra.colors`. After editing the file, switch to another scheme and back so Plasma reloads it:
-
-```sh
-plasma-apply-colorscheme BreezeDark && plasma-apply-colorscheme Umbra
-```
-
-**"launching ghostty failed: Remote peer disconnected".** Ghostty's D-Bus activation failed, usually right after installing. Log out and back in, then enable the service from step 9.
-
-**Menu hover highlight is bright white and unreadable.** You're using an application style like Darkly that ignores the color scheme's hover color. Switch to Breeze (step 2).
 
 ## Restoring with konsave
 

@@ -142,8 +142,6 @@ cat << 'EOF'
 A few things still have to be done by hand, see the README:
   - Fonts: System Settings > Fonts > Adjust All Fonts > JetBrains Mono 10
   - Panels: top bar and floating dock (unless you applied the konsave profile)
-  - Klassy: turn on the window outline with the plain accent color
-  - Quick Tile Gaps: set the gap size in System Settings > KWin Scripts
   - Wallpaper: pick any greyscale photo you like
 
 Log out and back in once so every app picks up the new style.
